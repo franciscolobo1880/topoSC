@@ -48,7 +48,7 @@ function build_OregLutchyn_wire(p::LatticeParams_OregLutchyn)
     model_K = @onsite((; μ=0.0) -> (2*t-μ)*kron(τz, σ0)) - hopping(t*kron(τz, σ0))
     model_Z = @onsite((; Vz=0.0) -> Vz*kron(τz, σz))
     model_α = @hopping((r, dr; α=0.0) -> α*(im*dr[1]/(2a0^2))*kron(τz, σy))
-    model_Δ = @onsite((; Δ0=0.0) -> Δ0*kron(τy, σy))
+    model_Δ = @onsite((; Δ=0.0) -> Δ*kron(τy, σy))
     model = model_K + model_Z + model_α + model_Δ
 
     h = lat |> hamiltonian(model, orbitals=4)

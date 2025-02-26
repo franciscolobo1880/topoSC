@@ -6,3 +6,6 @@ The code foundations are written within the package Quantica.jl. The folder /src
         - Bilayer graphene
 
 Visualize the lattices, bandstructures, spectrums, ettc... of various the models on their respective .jl files. See that at the end of each file there are functions that generate the pretty plots. 
+
+Corrections and further analysis of the models are very much appreciated.
+I thank Cesar Robles, Carlos Paya, Pablo SanJose and Elsa Prada for their contribution. 
